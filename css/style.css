@@ -7,12 +7,32 @@
     outline: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 144px;
+  gap: 32px;
+
+}
+
+.text {
+  display: flex;
+  gap: 16px;
+  width: 648px;
+  margin: 144px;
+}
+
 body {
     background-image: url(/assets/mountains-universe02.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    z-index: -1;
+    position: absolute;
+
 }
 
 nav {
@@ -41,7 +61,7 @@ nav {
     color: #E1E1E6;
   }
 
-  button {
+  input {
     width: 195px;
     height: 48px;
     background: none;
@@ -53,7 +73,7 @@ nav {
     line-height: 24px;
   }
 
-  button:hover{
+  input:hover{
     cursor: pointer;
     background-color:#fff ;
     color:#02799D;
@@ -64,4 +84,12 @@ nav {
 
   p {
     color: #E1E1E6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .title {
+    margin-right: 400px;
   }

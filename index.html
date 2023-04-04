@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPA Universe</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <nav>
       <img src="/assets/Vector.svg" href="#" />
 
-      <a href="/" onclick="route()">Home</a>
-      <a href="/universe" onclick="route()">O Universo</a>
-      <a href="/exploration" onclick="route()">Exploração</a>
+      <a class="home" href="/" onclick="route()">Home</a>
+      <a class="universe" href="/universe" onclick="route()">O Universo</a>
+      <a class="exploration" href="/exploration" onclick="route()"
+        >Exploração</a
+      >
     </nav>
 
     <div id="app"></div>
-
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
